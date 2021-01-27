@@ -21,3 +21,13 @@
 11. The for loop attempts to change finalPrice which was declared using "const", so we would have gotten an error.
 
 12. The function would successfully return [50, 100, 150]. Even though discounted is declared using "const", the for loop is still able to push elements into the array. We just cannot change the value of the array object itself.
+
+13a. student.name
+
+13b. student["Grad Year"]
+
+13c. student.greeting()
+
+13d. student["Favorite Teacher"].name
+
+13e. student.courseLoad[0]
