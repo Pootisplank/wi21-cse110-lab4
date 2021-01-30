@@ -31,3 +31,39 @@
 13d. student["Favorite Teacher"].name
 
 13e. student.courseLoad[0]
+
+14a. '3' + 2 outputs '32'. The 2 is implicitly converted to a string '2' and is concatenated to '3', giving us '32'.
+
+14b. '3' - 2 outputs 1. The output is an integer this time because we cannot subtract two strings, so the '3' is converted to the integer 3 and subtracts 2.
+
+14c. 3 + null outputs 3. Null is treated as 0 for mathematic operations, so 3 + 0 = 3.
+
+14d. '3' + null outputs '3null' since null is converted to a string and appended to '3'.
+
+14e. true + 3 outputs 4. The boolean value true is converted to 1 then added to 3.
+
+14f. false + null outputs 0. Numeric conversion occurs since we have addition without any strings. False and null are both represented as 0, so 0 + 0 = 0.
+
+14g. "3" + undefined outputs "3undefined". undefined is converted to a string and concatenated to "3".
+
+14h. "3" - undefined outputs NaN. Since we are subtracting values, we will be outputting a numeric value. "3" can be converted to 3, but undefined converts to NaN which will cause the entire output to be NaN.
+
+15a. "2" > 1 outputs true since "2" is converted to a number and 2 is greater than 1.
+
+15b. '2' < '12' outputs false since both '2' and '12' are converted to numbers and then compared.
+
+15c. 2 == '2' outputs true since '2' is converted to a number and 2 is equal to 2.
+
+15d. 2 === '2' outputs false since 2 is a number and '2' is a string, so a strict equality gives false.
+
+15e. true == 2 outputs false since true is converted to 1 and 1 is not equal to 2.
+
+15f. true === Boolean(2) outputs true since 2 is non-empty and Boolean(2) will output true which is the exact same as the left side.
+
+16. The == operator will attempt to convert different type values to the same type so true will be equal to 1, but a strict equality operator === will check equality without any type conversion so true will not be equal to 1 using ===.
+
+17. How are you? gets printed since the comparison 2 == true is false since true is converted to 1 and 2 is not equal to 1. In the next else if statement, 2 is non-empty and is treated as true, so that statement executes.
+
+18. If modifyArray([1, 2, 3], doSomething) is called, a return array called newArr is made. Each element of the parameter array [1, 2, 3] is then passed to the callback function doSomething along with function(x) which multiplies x by 2. The callback function doSomething will add 2 to the number then call function(x) to multiply it by 2. The result is then pushed to newArr. The final newArr contains the elements of the original array after they have been increased by 2 then multiplied by 2.
+
+19. The console will print 1 first. Then the console will print 3 followed by 2. This occurs since console.log(2) is set to have a delay of 1 second, so 3 will print first. Finally, the console prints 4.
